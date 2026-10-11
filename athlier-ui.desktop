@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Athlier UI
+Comment=Open Athlier UI
+Exec="/run/media/adie/AI Stack/Athlier-UI/Athlier-UI/launcher/athlier-ui-launcher.sh"
+Path=/run/media/adie/AI Stack/Athlier-UI/Athlier-UI
+Terminal=false
+Categories=Development;
+StartupNotify=true
