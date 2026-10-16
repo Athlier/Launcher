@@ -1,3 +1,17 @@
+**NON-NEGOTIABLE OWNER RULE — LLAMASWAP / MODULE HARNESS BOUNDARY**
+
+**LlamaSwap owns model infrastructure. Each Athlier module owns its behaviour through its own harness.**
+
+**LlamaSwap: model loading, GPU allocation, routing, hardware compatibility, and established production launch flags.**
+
+**Module-owned harness: context budgeting, token limits, sampling policies, validation, retries, evidence requirements, and other module-specific controls.**
+
+**No module may change shared LlamaSwap settings to solve its own problems.**
+
+**No model tuning without explicit owner approval.**
+
+**Do not change LlamaSwap configurations, model flags, GPU assignments, routing, or shared inference services as part of module work. If a module needs different behaviour, implement that constraint inside its own module-owned harness. If a genuine infrastructure defect is suspected, stop and request separate owner authorisation before altering infrastructure.**
+
 # Athlier Launcher instructions
 
 Preserve the installed launcher behavior and host paths unless the owner asks
@@ -40,18 +54,3 @@ from an older branch. Keep README status accurate for the branch it describes;
 separate source presence, unit tests, integration evidence and live qualification.
 An explicit owner request for documentation-only maintenance on `main` permits
 only that scoped documentation update, not implementation promotion.
-**NON-NEGOTIABLE OWNER RULE — LLAMASWAP / MODULE HARNESS BOUNDARY**
-
-**LlamaSwap owns model infrastructure. Each Athlier module owns its behaviour through its own harness.**
-
-**LlamaSwap: model loading, GPU allocation, routing, hardware compatibility, and established production launch flags.**
-
-**Module-owned harness: context budgeting, token limits, sampling policies, validation, retries, evidence requirements, and other module-specific controls.**
-
-**No module may change shared LlamaSwap settings to solve its own problems.**
-
-**No model tuning without explicit owner approval.**
-
-**Do not change LlamaSwap configurations, model flags, GPU assignments, routing, or shared inference services as part of module work. If a module needs different behaviour, implement that constraint inside its own module-owned harness. If a genuine infrastructure defect is suspected, stop and request separate owner authorisation before altering infrastructure.**
-
-# Athlier Launcher instructions
